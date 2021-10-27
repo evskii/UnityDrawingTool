@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -5,6 +6,14 @@ using UnityEngine;
 
 public class DrawingTool : MonoBehaviour
 {
+	/// <summary>
+	/// The bread and butter of this whole operation...
+	/// It controls the linerenderers and mousepositions and what not
+	/// for when the user is drawing. You can use the variables under the Brush
+	/// Settings header willy nilly to have some fun. Just changed the size of the
+	/// Brush Colours list in the inspector and add what colours you want. Dont
+	/// go too wild tho...
+	/// </summary>
 	[Header("Setup Variables")]
 	[SerializeField] private GameObject backgroundImage;
 	[SerializeField] private Transform drawnLinesParent;
@@ -12,25 +21,24 @@ public class DrawingTool : MonoBehaviour
 	
 	[SerializeField] private float lineStepDistance; //How far the mouse moves before adding new point to line
 
-	[SerializeField] private GameObject currentLine = null; //Reference the line that is being drawn
-	[SerializeField] private bool drawing = false; //If we are currently drawing a line
+	private GameObject currentLine = null; //Reference the line that is being drawn
+	private bool drawing = false; //If we are currently drawing a line
 	private bool waitingToDraw = false; //Used to see if the mouse is off the canvas but the button is held down
 	private int layerOrder = 0; //Used so each line can get layered ontop of the last
 	
-	[SerializeField] private List<GameObject> allDrawnLines = new List<GameObject>();
+	private List<GameObject> allDrawnLines = new List<GameObject>();
 	private List<Vector3> currentLinePositions = new List<Vector3>(); //While we are drawing we update this list with all the positions of the line
 	
 
 	[Header("Brush Settings")]
 	[Range(0.05f, 1f)]public float brushSize = 0.3f;
-	[SerializeField] private int colourAmt = 4;
 	public int currentMaterialIndex = 0;
-	public List<Color> brushColours = new List<Color>();
-	private List<Material> brushMaterals = new List<Material>();
+	public List<Color> brushColours = new List<Color>(); //Works best with around 8 colours, can do more but the UI overflows :/
+	private List<Material> brushMaterals = new List<Material>(); //Materials are created for this list on startup using the colours above
 
 	private void Start() {
 		//Init the colour brush settings
-		for (int i = 0; i < colourAmt; i++) {
+		for (int i = 0; i < brushColours.Count; i++) {
 			Material newColour = new Material(Shader.Find("Sprites/Default"));
 			newColour.color = brushColours[i];
 			Debug.Log(newColour);
@@ -158,7 +166,7 @@ public class DrawingTool : MonoBehaviour
 
 	public void UpdateBrushColour(int newColour) {
 		//Set the colour of the brush (used in conjunction with the DrawingToolUiController.cs script)
-		if (newColour >= colourAmt) {
+		if (newColour >= brushColours.Count) {
 			currentMaterialIndex = 0;
 			Debug.LogWarning("Trying to find colour index of " + newColour + " which is not fucking possible...");
 		} else {

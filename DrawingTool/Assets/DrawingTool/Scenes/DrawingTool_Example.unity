@@ -159,7 +159,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 0}
+  m_BackGroundColor: {r: 0.98039216, g: 0.88235295, b: 0.8666667, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -279,14 +279,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4462584025446851251, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4462584025976294377, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.6
-      objectReference: {fileID: 0}
     - target: {fileID: 4462584026258638432, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
       propertyPath: m_Name
       value: DrawingTool
@@ -334,6 +326,150 @@ PrefabInstance:
     - target: {fileID: 4462584026258638433, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushSize
+      value: 0.288
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[0].b
+      value: 0.36040404
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[0].g
+      value: 0.36040404
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[0].r
+      value: 0.8584906
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[1].b
+      value: 0.2956123
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[1].g
+      value: 0.8584906
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[1].r
+      value: 0.39959082
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[2].b
+      value: 0.9045621
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[2].g
+      value: 0.9245283
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[2].r
+      value: 0.39684942
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[3].b
+      value: 0.33579564
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[3].g
+      value: 0.6242152
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[3].r
+      value: 0.9245283
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[4].b
+      value: 0.89967066
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[4].g
+      value: 0.34451762
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[4].r
+      value: 0.9245283
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[5].b
+      value: 0.30411178
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[5].g
+      value: 0.30411178
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[5].r
+      value: 0.3207547
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[6].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[6].b
+      value: 0.30411178
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[6].g
+      value: 0.30411178
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[6].r
+      value: 0.3207547
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[7].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[7].b
+      value: 0.30411178
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[7].g
+      value: 0.30411178
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[7].r
+      value: 0.3207547
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[8].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[8].b
+      value: 0.30411178
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[8].g
+      value: 0.30411178
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[8].r
+      value: 0.3207547
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[9].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[9].b
+      value: 0.30411178
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[9].g
+      value: 0.30411178
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462584026258638446, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
+      propertyPath: brushColours.Array.data[9].r
+      value: 0.3207547
       objectReference: {fileID: 0}
     - target: {fileID: 4462584027224088396, guid: 704b385d054e8fd469934d36ace1e0e7, type: 3}
       propertyPath: m_AnchorMax.x

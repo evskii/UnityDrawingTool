@@ -8,6 +8,11 @@ using UnityEditor;
 
 public class RenderTextureToPng : MonoBehaviour
 {
+    /// <summary>
+    /// This is ths script written that takes care of exporting the drawn image
+    /// to a png file. It uses a render texture attached to an ortho camera that
+    /// is set up in the scene to capture the size of the canvas.
+    /// </summary>
     public RenderTexture rendTexture; //Render texture that our secondary camera captures
 
     private WaitForEndOfFrame frameEnd = new WaitForEndOfFrame();
@@ -28,6 +33,7 @@ public class RenderTextureToPng : MonoBehaviour
         
         RenderTexture.active = currentActiveRT; //Restore original render texture
 
+        //Search for our SavedImages directory and save the image using the name in our fileName variable
         string path = "";
         if (Directory.Exists(Application.dataPath + "/SavedImages")) {
             path = Application.dataPath + "/SavedImages/" + fileName + ".png";
